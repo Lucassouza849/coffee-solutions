@@ -36,6 +36,9 @@ Umidade int,
 Temperatura int,
 Setor varchar (80) );
 
+alter table Sensor drop column Setor;
+
+
 insert into Sensor values
 (null, '25', '30','Estufa'),
 (null, '30', '32','Lado Sul'),
