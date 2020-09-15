@@ -36,6 +36,9 @@ Umidade int,
 Temperatura int,
 Setor varchar (80) );
 
+alter table Sensor add column dataSensor datetime;
+
+select * from Sensor;
 alter table Sensor drop column Setor;
 
 
