@@ -14,7 +14,6 @@ insert into Usuario values
 
 select * from Usuario; 
 
-
 create table Cadastro (
 Nome varchar(50),
 Email varchar(100),
@@ -34,21 +33,13 @@ create table Sensor (
 idSensor int primary key auto_increment,
 Umidade int,
 Temperatura int,
-Setor varchar (80) );
-
-alter table Sensor add column dataSensor datetime;
-
-select * from Sensor; 
-alter table Sensor drop column Setor;
-
+dataSensor datetime
+);
 
 insert into Sensor values
-(null, '25', '30','Estufa'),
-(null, '30', '32','Lado Sul'),
-(null, '20', '34','Lado Leste'); 
-
-update Sensor set dataSensor = '2020-08-09 11:06:25' where idSensor = 1;
-update Sensor set dataSensor = '2020-09-15 12:10:45' where idSensor = 2;
-update Sensor set dataSensor = '2020-10-20 13:00:19' where idSensor = 3;
+(null, '25', '30','2020-08-09 11:06:25'),
+(null, '30', '32','2020-09-15 12:10:45'),
+(null, '20', '34','2020-10-20 13:00:19'); 
 
 select * from Sensor;
+
