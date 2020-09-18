@@ -34,10 +34,10 @@
 			type: 'line',
 			data: {
 				datasets: [{
-					label: "Temperatura x Tempo",
+					label: "Umidade x Tempo",
 					type: 'line',
-					backgroundColor: ['rgb(39, 248, 2 )'],
-					borderColor: ['#F50303'], 
+					backgroundColor: ['#5B1212'],
+					borderColor: ['#1C7E19'], 
 				}]
 			},
 			options: {
@@ -53,12 +53,12 @@
 					yAxes: [{
 						scaleLabel: {
 							display: true,
-							labelString: 'Temperature'
+							labelString: 'Umidade'
                         },
                         ticks: {
 							beginAtZero:true,
-							suggestedMin: 0,
-							suggestedMax: 30
+							suggestedMin: 20,
+							suggestedMax: 60
                         }
 					}]
 				},
