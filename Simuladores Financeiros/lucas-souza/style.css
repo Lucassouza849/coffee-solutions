@@ -10,6 +10,12 @@ img {
     width: 300px;
     height: 300px;
 }
+h2{
+    background-color: #ADD8E6;
+    height: 70px;
+    margin-top: auto;
+    text-align: center;
+}
 .navbar {
     background-color: white;
     height: 110px;
@@ -36,5 +42,8 @@ cursor: pointer;
     border-radius: 15px;
     padding: 8px 25px;
     color: green;
+}
+#desc {
+    font-weight: bold;
 }
 

@@ -23,10 +23,10 @@
     <li>Se conecte ao campo de qualquer lugar que estiver</li>
     </div><br>
 
-    <span id="text1" style="display: none;">Digite a quantide de talhões:</span><br>
+    <span id="text1" style="display: none;"><b>Digite a quantide de talhões:</b></span><br>
     <input id="inp_1" type="text" placeholder="Digite quantidade de talhões" style="display: none;"><br>
 
-    <span id="text2" style="display: none;">Digite a quantide de Hectares:</span><br>
+    <span id="text2" style="display: none;"><b>Digite a quantide de Hectares:</b></span><br>
     <input id="inp_2" type="text" placeholder="Digite quantidade de hectare" style="display: none;"><br>
 
     <button onclick="calculo()" id="calcu" style="display: none;">SIMULAR</button><br><br>
@@ -46,8 +46,10 @@
     }
     function calculo(){               
         var multi = Number(inp_1.value)*700;
-        resultado.innerHTML = `<b>O invetimento necessário para sua propriedade que possui ${inp_2.value} 
-        Hectares é de R$ ${multi},00<br>Entre em contato e agende uma reunião:<br> contato@coffesoluttions.com.br<br><br>`;
+        var multi2 = Number(inp_2.value)*10000;
+        resultado.innerHTML = `<b>O invetimento necessário para sua propriedade que possui ${multi2}
+        metros quadrados  e que tem ${inp_1.value} talhões é de: R$ ${multi},00 reais<br>
+        Entre em contato e agende uma reunião: contato@coffesoluttions.com.br<br><br>`;
         resultado.style.display = 'block';
     }
 </script>
