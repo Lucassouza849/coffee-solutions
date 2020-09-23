@@ -39,9 +39,10 @@
 <script>
     function calcular() {
         var calculo = Number(valor_talhao.value) * 700;
+        var calculo2= Number(valor_hectare.value) * 10000;
         div_resul.style.display = 'block'
         div_resul.innerHTML = `<br><br>O valor total do seu investimento baseado no seu terreno <br>
-         que possui <b><u>${valor_hectare.value}</u></b> Hectares vai ser de <b><u>R$${calculo}</u></b> Reais.`;
+         que possui <b><u>${calculo2}</u></b> metros quadrados vai ser de <b><u>R$${calculo}</u></b> Reais.`;
 
 
     }
