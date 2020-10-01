@@ -37,9 +37,9 @@ dataSensor datetime
 );
 
 insert into Sensor values
-(null, '25', '30','2020-08-09 11:06:25'),
-(null, '30', '32','2020-09-15 12:10:45'),
-(null, '20', '34','2020-10-20 13:00:19'); 
+(null, '25', '30', sysdate()),
+(null, '30', '32', sysdate()),
+(null, '20', '34', sysdate()); 
 
 select * from Sensor;
 
