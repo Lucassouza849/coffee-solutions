@@ -39,7 +39,8 @@ dataSensor datetime
 insert into Sensor values
 (null, '25', '30', sysdate()),
 (null, '30', '32', sysdate()),
-(null, '20', '34', sysdate()); 
+(null, '20', '34', sysdate()),
+(null, '18', '30', sysdate()); 
 
 select * from Sensor;
 
