@@ -1,0 +1,107 @@
+@font-face{
+    font-family: wolfer;
+    src: url(../fonte/circular-black.woff2);
+ }
+
+ @font-face{
+    font-family: rochester;
+    src: url(../fonte/Rochester-Regular.ttf);
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    background: none;
+    border: none;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.nav-bar{
+    background-color: black;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.central{
+    width: 60vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-logo{
+    width: 7vw;
+    height: 8vh;
+}
+
+.list-link{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
+    height: 8vh;
+    margin-top: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-link li{
+    cursor: pointer;
+    list-style-type: none;
+    font-family: wolfer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.list-link li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #3A6C22;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.list-link li:hover::after{
+    width: 100%;
+}
+
+
+.list-link li:hover{
+    color: #3A6C22;
+}
+
+.list-link span{
+    list-style-type: none;
+    font-family: wolfer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.middle{
+    background-color: #ffffff;
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.middle-container{
+    background-color: #E5D0C3;
+    width: 60vw;
+    height: 92vh;
+}
