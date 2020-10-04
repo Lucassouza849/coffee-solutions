@@ -22,12 +22,13 @@ body{
     margin: 0px;
 }
 .nav-bar{
-    background-color: #000000;
+    background-color: rgba(255, 255, 255, 0.95);
     width: 99.1vw;
     height: 8vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: fixed;
 }
 
 .central{
@@ -60,7 +61,7 @@ body{
     font-family: wolfer;
     font-size: 15px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #006400;
     display: inline-block;
 }
 
@@ -88,14 +89,14 @@ body{
     font-family: wolfer;
     font-size: 15px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #006400;
 }
 
 .middle{
     background-image: linear-gradient(#503d1b,rgba(0,0,0,0.6)),url(../images/graos.jpg);
     background-size: cover;
     width: 99.1vw;
-    height: 92vh;
+    height: 72vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -104,10 +105,12 @@ body{
 .middle-container{
     
     width: 60vw;
-    height: 92vh;
+    height: 72vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .middle-title{
@@ -118,8 +121,10 @@ body{
 .middle-title h1{
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  color: #ffffff;
- font-size: 50px;
+ font-size: 40px;
  animation: text-animation 5s ease;
+ text-align: center;
+ margin-top: 20px;
 }
 
 @keyframes text-animation{
@@ -135,6 +140,41 @@ body{
     100% {
         transform: translateX(0px);
     }
+}
+
+.middle-btn{
+    margin-top: -20%;
+    background-color: #006400;
+    color: #ffffff;
+    padding: 16px 40px;
+    border-radius: 500px;
+    line-height: 16px;
+    font-family: wolfer;
+    animation: button-animation 2.5s;
+}
+
+@keyframes button-animation{
+    0% {
+        transform: translateY(5000px);
+    }
+
+    25% {
+        transform: translateY(5000px);
+    }
+
+    50%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.second-container{
+    width: 99.1vw;
+    height: 50vh;
+    background-color: white;
 }
 
 .footer{
