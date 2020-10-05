@@ -68,11 +68,12 @@ body{
 .list-link li::after{
     content: '';
     width: 0;
-    height: 2px;
+    height: 2.5px;
     background: #006400;
     display: block;
     margin: auto;
     transition: 0.2s;
+    border-radius: 5000px;
 }
 
 .list-link li:hover::after{
@@ -151,6 +152,13 @@ body{
     line-height: 16px;
     font-family: wolfer;
     animation: button-animation 2.5s;
+    cursor: pointer;
+    outline-style: none;
+}
+
+.middle-btn:hover{
+    background-color: #ffffff;
+    color: #006400;
 }
 
 @keyframes button-animation{
@@ -173,8 +181,8 @@ body{
 
 .second-container{
     width: 99.1vw;
-    height: 50vh;
-    background-color: white;
+    height: 65vh;
+    background-color: rgb(153, 125, 74);
 }
 
 .footer{
