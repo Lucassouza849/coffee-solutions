@@ -15,6 +15,7 @@ insert into Usuario values
 select * from Usuario; 
 
 create table Cadastro (
+idCadastro int primary key auto_increment,
 Nome varchar(50),
 Email varchar(100),
 data_nasc date,
@@ -23,9 +24,9 @@ Endereço varchar (100),
 cpf char (11) );
 
 insert into Cadastro values
-('Talita Cabral', 'talita-cabral@hotmail', '2002-04-07', '958682323', 'Rua Padre Almeida Silva', '49522993840'),
-('Bruna Brito', 'bruna.melo@bandtec.com.br','1998-04-06', '960416628','Rua Porto Lucena','47633986875'),
-('Yuri Cruz', 'yuri.cruz@bandtec.com.br','2002-06-18','996488522', 'Rua Prof Tadeu', '48753827821');
+(null,'Talita Cabral', 'talita-cabral@hotmail', '2002-04-07', '958682323', 'Rua Padre Almeida Silva', '49522993840'),
+(null,'Bruna Brito', 'bruna.melo@bandtec.com.br','1998-04-06', '960416628','Rua Porto Lucena','47633986875'),
+(null,'Yuri Cruz', 'yuri.cruz@bandtec.com.br','2002-06-18','996488522', 'Rua Prof Tadeu', '48753827821');
 
 select * from Cadastro; 
 
