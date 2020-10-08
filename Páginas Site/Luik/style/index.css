@@ -182,7 +182,44 @@ body{
 .second-container{
     width: 99.1vw;
     height: 65vh;
-    background-color: rgb(153, 125, 74);
+    background-color: #EDBF8E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.central-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+.image-colheita{
+    background-color: #EDBF8E;
+    width: 50%;
+    height: 100%;
+}
+
+.third-container{
+    width: 99.1vw;
+    height: 65vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.another-central{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .footer{
