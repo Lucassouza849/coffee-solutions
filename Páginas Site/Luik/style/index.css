@@ -123,17 +123,17 @@ body{
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  color: #ffffff;
  font-size: 40px;
- animation: text-animation 5s ease;
+ animation: text-animation 2s ease;
  text-align: center;
  margin-top: 20px;
 }
 
 @keyframes text-animation{
     0% {
-        transform: translateX(-1400px);
+        transform: translateX(-5000000px);
     }
     25% {
-        transform: translateX(0px);
+        transform: translateX(-300px);
     }
     50% {
         transform: translateX(0px);
@@ -151,9 +151,9 @@ body{
     border-radius: 500px;
     line-height: 16px;
     font-family: wolfer;
-    animation: button-animation 2.5s;
     cursor: pointer;
     outline-style: none;
+    animation: button-animation 1s;
 }
 
 .middle-btn:hover{
@@ -163,15 +163,15 @@ body{
 
 @keyframes button-animation{
     0% {
-        transform: translateY(5000px);
+        transform: translateY(5000000000px);
     }
 
     25% {
-        transform: translateY(5000px);
+        transform: translateY(0px);
     }
 
     50%{
-        transform: translateY(0px);
+        transform: translateY(50px);
     }
 
     100%{
@@ -223,7 +223,7 @@ body{
 }
 
 .footer{
-    width: 99.1vw;
+    width: 100%;
     height: 30vh;
     background-color: black;
 }
