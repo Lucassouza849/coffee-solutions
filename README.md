@@ -7,5 +7,5 @@ Lucas Souza <br>
 Pedro Lopes<br>
 Luik Castro<br>
 Rennan Aquino<br>
-Gabriel lemos<br>
+Gabriel Lemos<br>
 Leonardo Victor
