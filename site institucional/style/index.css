@@ -68,8 +68,8 @@
     cursor: pointer;
 }
 .list-nav-bar ul li:hover{
-    text-decoration: underline #006400;
-    color: #006400;
+    text-decoration: underline #3c5f3c;
+    color: #3c5f3c;
 }
 
 
@@ -82,15 +82,16 @@
 }
 
 .button-nav-bar button{
-    background-color: white;
+    background-color: #2d5f2d;
     border-radius: 500px;
     padding: 10px 40px;
     font-family: wolfer;
     cursor: pointer;
+    color: #ffffff;
 }
 
 .button-nav-bar button:hover{
-    background-color: #006400;
+    background-color: #1b3f1b;
     color: #ffffff;
 }
 
@@ -214,20 +215,35 @@
     
 }
 .middle-footer {
-    width: 80%;
+    width: 70%;
     height: 100%;
     color: white;
     display: flex;
     justify-content: space-between;
 }
 
-.sobre {
-    width: 18vw;
+.img-footer{
+    width: 12vw;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.sobre ul{
+.img-footer img{
     width: 100%;
+    height: 50%;
+}
+
+
+.contato {
+    width: 10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contato ul{
+    width: 50%;
     height: 100%;
     list-style: none;
     display: flex;
@@ -235,77 +251,158 @@
     font-size: large;
     justify-content: space-evenly;
     font-family: wolfer;
-}
-
-.sobre ul li{
-    list-style: none;
-    font-family: wolfer;
-}
-
-.sobre ul li:nth-child(1) {
-    color: #3c5f3c;
-}
-
-.sobre ul li:nth-child(2):hover {
-    text-decoration: underline #3c5f3c;
-    color: #3c5f3c;
-    cursor: pointer;
-}
-
-.sobre ul li:nth-child(3):hover {
-    text-decoration: underline #3c5f3c;
-    color: #3c5f3c;
-    cursor: pointer;
-}
-
-.sobre ul li:nth-child(4):hover {
-    text-decoration: underline #3c5f3c;
-    color: #3c5f3c;
-    cursor: pointer;
-}
-
-.sobre div {
-    width: 80%;
-    height: 50%;
-}
-
-.sobre div img {
-    width: 100%;
-    height: 100%;
-}
-
-.contato {
-    width: 18vw;
-    height: 100%;
+    font-size: 15px;
 }
 
 .contato ul li:nth-child(1) {
     color: #3c5f3c;
+    font-size: 20px;
 }
 
 .contato ul li:nth-child(2):hover {
-    text-decoration: underline#3c5f3c;
-    color:#3c5f3c;
+    text-decoration: underline #ffffff;
+    color: #ffffff;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .contato ul li:nth-child(3):hover {
-    text-decoration: underline#3c5f3c;
-    color:#3c5f3c;
+    text-decoration: underline #ffffff;
+    color: #ffffff;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .contato ul li:nth-child(4):hover {
-    text-decoration: underline#3c5f3c;
-    color:#3c5f3c;
+    text-decoration: underline #ffffff;
+    color: #ffffff;
     cursor: pointer;
+    font-size: 15px;
 }
 
-.suporte {
-    width: 18vw;
-    height: 100%;
-    background-color: lightcoral;
+.contato ul li:nth-child(5):hover {
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
 }
+
+.temporario {
+    width: 10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.temporario ul{
+    width: 50%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: wolfer;
+    
+}
+
+.temporario ul li{
+    list-style: none;
+    font-family: wolfer;
+    font-size: 15px;
+}
+
+.temporario ul li:nth-child(1) {
+    color: #3c5f3c;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.temporario ul li:nth-child(2):hover {
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.temporario ul li:nth-child(3):hover {
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.temporario ul li:nth-child(4):hover {
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.temporario ul li:nth-child(5):hover {
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.ajuda{
+    width: 10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ajuda ul{
+    width: 50%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: wolfer;
+}
+
+.ajuda ul li{
+    list-style: none;
+    font-family: wolfer;
+    font-size: 15px;
+}
+
+.ajuda ul li:nth-child(1) {
+    color: #3c5f3c;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ajuda ul li:nth-child(2):hover {
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.ajuda ul li:nth-child(3):hover {
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.ajuda ul li:nth-child(4):hover {
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.ajuda ul li:nth-child(5):hover {
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
 
 .social{
     width: 22vw;
@@ -314,16 +411,7 @@
     flex-direction: column;
 }
 
-.contato ul{
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    font-size: large;
-    justify-content: space-evenly;
-    font-family: wolfer;
-}
+
 
 .titulozin {
     width: 100%;
