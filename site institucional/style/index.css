@@ -52,6 +52,11 @@
     margin-top: 0;
 }
 
+.list-nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
 .list-nav-bar ul{
     list-style-type: none;
     display: flex;
@@ -69,7 +74,8 @@
     color: #ffffff;
     cursor: pointer;
 }
-.list-nav-bar ul li:hover{
+
+.list-nav-bar ul li a:hover{
     text-decoration: underline #3c5f3c;
     color: #3c5f3c;
 }
@@ -113,14 +119,17 @@
 }
 
 .img-lavoura {
+    background-color: #EDBF8E;
     width: 50%;
     height: 100%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-lavoura img{
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 500px;
 }
 
 .content-lavoura {
@@ -133,19 +142,20 @@
 }
 
 .title-lavoura {
-    height: 30%;
-    width: 60%;
+    height: 40%;
+    width: 100%;
     padding-top: 50px;
-    font-size: 40px;
+    font-size: 52px;
     text-align: center;
     background-color: #EDBF8E;
     font-family: wolfer;
 }
 
 .text-lavoura {
+    color: rgb(45 95 45);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 60%;
-    text-align: center;
-    font-size: 30px;
+    font-size: 29px;
     padding: 30px;
     background-color: #EDBF8E;
 }
@@ -175,15 +185,17 @@
 }
 
 .title-producao {
+    font-family: wolfer;
     height: 30%;
     padding-top: 50px;
-    font-size: 50px;
+    font-size: 55px;
     text-align: center;
     background-color: #fff;
 }
 
 .text-producao {
-    text-align: center;
+    color: rgb(45 95 45);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     padding: 30px;
     background-color: #fff;
@@ -194,17 +206,20 @@
     width: 50%;
     height: 100%;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-producao img {
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 500px;
 }
 
 .fourth-container{
     width: 100%;
     height: 65vh;
-    background-color: lightblue;
+    background-color: #769676;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +236,7 @@
 .simulator{
     width: 80%;
     height: 80%;
-    background-color: pink;
+    background-color: #d1d1d1;
     display: flex;
     font-family: wolfer;
     border-radius: 10px;
