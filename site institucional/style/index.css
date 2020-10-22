@@ -211,7 +211,6 @@
 }
 
 .box-simulator{
-    background-color: blanchedalmond;
     width:  62vw;
     height: 100%;
     display: flex;
@@ -222,24 +221,89 @@
 .simulator{
     width: 80%;
     height: 80%;
-    background-color: burlywood;
+    background-color: pink;
     display: flex;
+    font-family: wolfer;
+    border-radius: 10px;
 }
 
 .first-part{
+    background-color: #f5efef;
     width: 50%;
     height: 100%;
-    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
-.second-part{
+.img-wallet {
+    width: 80%;
+    height: 40%;
+}
+
+.img-wallet img {
+    width: 100%;
+    height: 100%;
+}
+
+.second-part {
+    color: black;
     width: 50%;
     height: 100%;
-    background-color: chartreuse;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
     align-items: center;
-    justify-content: space-around;
+}
+
+.second-part h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.simulador {
+    margin-top: 20%;
+}
+
+.input-simulator {
+    height: 40px;
+    border-radius: 50px;
+    width: 100%;
+    background-color: white;
+    border: 2px black solid;
+    outline: none;
+}
+
+.input-simulator :hover{
+    border: black;
+}
+
+.text-simulator {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.btn-entrar {
+    font-size: large;
+    height: 40px;
+    margin: 15px 0;
+    font-weight: bold;
+    width: 200px;
+    color: white;
+    background-color: #4caf50;
+    border-radius: 50px;
+    border: 2px black solid;
+    margin-top: 40px;
+    margin-left: 120px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-entrar:hover{
+    background-color: rgb(41, 94, 52);
+    transition: 0.3s;
 }
 
 .footer {
