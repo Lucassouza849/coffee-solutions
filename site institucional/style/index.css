@@ -26,6 +26,8 @@
     height: 8vh;
     display: flex;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.925);
+    position: fixed;
 }
 
 .central-nav-bar{
@@ -203,8 +205,42 @@
     width: 100%;
     height: 65vh;
     background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.box-simulator{
+    background-color: blanchedalmond;
+    width:  62vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simulator{
+    width: 80%;
+    height: 80%;
+    background-color: burlywood;
+    display: flex;
+}
+
+.first-part{
+    width: 50%;
+    height: 100%;
+    background-color: teal;
+}
+
+.second-part{
+    width: 50%;
+    height: 100%;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .footer {
     width: 100%;
