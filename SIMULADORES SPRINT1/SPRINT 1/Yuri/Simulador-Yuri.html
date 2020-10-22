@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee Solutions Calculator</title>
+</head>
+<body>
+    <center>
+        <div class="div_logo">
+         <img class="logo" src="Logo TCS.png" alt="logo coffee solutions" style="height: 350px;">
+       </div>
+       <div class="base_calculadora">
+            <br>
+        <h2 class="titulo_calculadora">Calculadora Financeira Coffee Solutions</h1>
+            <br> 
+             <span style="color: green;">Em quantos talhões deseja o produto?</span>
+            <br> <br>
+            <input id="valor_talhao" placeholder="Ex: 6">
+            <br> <br> 
+            <span style="color: green;">Qual a média em hectares?</span>
+            <br> <br>
+            <input id="valor_hectare" placeholder="Ex 4,6">
+            <br> <br>
+            <button onclick="calcular()">Calcular</button>
+            <br>
+            <div class="resul" id="div_resul" style="display: none;">
+
+            </div>
+               
+        </div>
+    </center>
+   
+
+</body>
+</html>
+
+<script>
+    function calcular() {
+        var calculo = Number(valor_talhao.value) * 700;
+        var calculo2= Number(valor_hectare.value) * 10000;
+        div_resul.style.display = 'block'
+        div_resul.innerHTML = `<br><br>O valor total do seu investimento baseado no seu terreno <br>
+         que possui <b><u>${calculo2}</u></b> metros quadrados vai ser de <b><u>R$${calculo}</u></b> Reais.`;
+
+
+    }
+
+</script>

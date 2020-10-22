@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BDB76B;
+    margin: 0px;
+    color: white;
+}
+
+img {
+    margin-top: -100px;
+    width: 300px;
+    height: 300px;
+}
+h2{
+    background-color: #ADD8E6;
+    height: 70px;
+    margin-top: auto;
+    text-align: center;
+}
+.navbar {
+    background-color: white;
+    height: 110px;
+}
+.bot_1, #calcu {
+border:1px;
+border-radius: 10px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+padding: 8px 18px;
+color: green;
+font-weight: bold;
+cursor: pointer;
+}
+
+#inp_1{
+    border: 1px;
+    border-radius: 15px;
+    padding: 8px 25px;
+    color: green;
+}
+#inp_2{
+    border: 1px;
+    border-radius: 15px;
+    padding: 8px 25px;
+    color: green;
+}
+#desc {
+    font-weight: bold;
+}
+

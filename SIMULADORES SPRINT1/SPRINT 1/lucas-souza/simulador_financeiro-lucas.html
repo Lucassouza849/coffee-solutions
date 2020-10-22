@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro - Coffee Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div class="navbar">
+            <img src="Logo TCS.png" alt="logotipo da empresa">
+        </div>
+
+        <h2>Monitore a umidade da sua plantação e <br>consiga planejar melhor as atividades até a sua colheita!</h2>
+
+        <button onclick="mostrar()" class="bot_1">SIMULE AQUI</button><br><br>
+
+        <div id="desc" style="display: none;">
+            <li>implementação, treinamento e manutenção</li>
+            <li>Suporte e acompanhamento</li>
+            <li>Relatório mensais</li>
+            <li>Se conecte ao campo de qualquer lugar que estiver</li>
+        </div><br>
+
+        <span id="text1" style="display: none;"><b>Digite a quantide de talhões:</b></span><br>
+        <input id="inp_1" type="text" placeholder="Digite quantidade de talhões" style="display: none;"><br>
+
+        <span id="text2" style="display: none;"><b>Digite a quantide de Hectares:</b></span><br>
+        <input id="inp_2" type="text" placeholder="Digite quantidade de hectare" style="display: none;"><br>
+
+        <button onclick="calculo()" id="calcu" style="display: none;">SIMULAR</button><br><br>
+        <div id="resultado" style="display: none;">
+        </div>
+    </center>
+</body>
+
+</html>
+<script>
+    function mostrar() {
+        text1.style.display = 'block';
+        text2.style.display = 'block';
+        desc.style.display = 'block';
+        inp_1.style.display = 'block';
+        inp_2.style.display = 'block';
+        calcu.style.display = 'block';
+    }
+    function calculo() {
+        var multi = Number(inp_1.value) * 700;
+        var multi2 = Number(inp_2.value) * 10000;
+        resultado.innerHTML = `<b>O invetimento necessário para sua propriedade que possui ${multi2}
+        metros quadrados  e que tem ${inp_1.value} talhões é de: R$ ${multi},00 reais<br>
+        Entre em contato e agende uma reunião: contato@coffesoluttions.com.br<br><br>`;
+        resultado.style.display = 'block';
+    }
+</script>
