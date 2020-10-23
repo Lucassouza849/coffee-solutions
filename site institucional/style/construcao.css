@@ -12,15 +12,6 @@
     border: none;
 }
 
-.first-container{
-    width: 100;
-    height: 65vh;
-    background-image: linear-gradient(#000000,rgba(0,0,0,0.6)),url(../images/graos.jpg);
-    background-position: -10%;
-    background-size: cover;
-    background-repeat: no-repeat
-}
-
 .nav-bar{
     width: 100%;
     height: 8vh;
@@ -108,224 +99,34 @@
     background-color: #1b3f1b;
     color: #ffffff;
 }
-
-.second-container{
-    width: 100%;
-    height: 65vh;
-    background-color: #EDBF8E;
-    display: flex;
-    justify-content: center;
-}
-
-.middle-lavoura {
-    width: 80%;
-    height: 100%;
+/* FIM NAVBAR */
+.secao-sobre {
     background-color: white;
+    width: 100%;
+    height: 70vh;
     display: flex;
 }
 
-.img-lavoura {
-    background-color: #EDBF8E;
-    width: 50%;
+.box1 {
+    width: 70%;
+    height: auto;
+}
+
+.box2 {
+    width: 30%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.img-lavoura img{
-    width: 600px;
-    height: 500px;
-}
-
-.content-lavoura {
-    width: 50%;
-    height: 100%;;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #EDBF8E;
-}
-
-.title-lavoura {
-    height: 40%;
-    width: 100%;
-    padding-top: 50px;
-    font-size: 52px;
+    align-items: center;
     text-align: center;
-    background-color: #EDBF8E;
+}
+
+.box2 h1 {
     font-family: wolfer;
+    font-size: 100px;
 }
 
-.text-lavoura {
-    color: rgb(45 95 45);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 60%;
-    font-size: 29px;
-    padding: 30px;
-    background-color: #EDBF8E;
-}
-
-.third-container{
-    width: 100%;
-    height: 65vh;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-}
-
-.middle-producao {
-    width: 80%;
-    height: 100%;
-    background-color: #fff;
-    display: flex;
-}
-
-.content-producao {
-    width: 50%;
-    height: 100%;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.title-producao {
-    font-family: wolfer;
-    height: 30%;
-    padding-top: 50px;
-    font-size: 55px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.text-producao {
-    color: rgb(45 95 45);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    padding: 30px;
-    background-color: #fff;
-    height: 60%;
-}
-
-.img-producao {
-    width: 50%;
-    height: 100%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-producao img {
-    width: 600px;
-    height: 500px;
-}
-
-.fourth-container{
-    width: 100%;
-    height: 65vh;
-    background-color: #769676;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.box-simulator{
-    width:  62vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.simulator{
-    width: 80%;
-    height: 80%;
-    background-color: #d1d1d1;
-    display: flex;
-    font-family: wolfer;
-    border-radius: 10px;
-}
-
-.first-part{
-    background-color: #f5efef;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.img-wallet {
-    width: 80%;
-    height: 40%;
-}
-
-.img-wallet img {
-    width: 100%;
-    height: 100%;
-}
-
-.second-part {
-    color: black;
-    width: 50%;
-    height: 100%;
-    padding: 20px;
-    align-items: center;
-}
-
-.second-part h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-}
-
-.simulador {
-    margin-top: 20%;
-}
-
-.input-simulator {
-    height: 40px;
-    border-radius: 50px;
-    width: 100%;
-    background-color: white;
-    outline: none;
-}
-
-.input-simulator :hover{
-    border: black;
-}
-
-.text-simulator {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: large;
-}
-
-.btn-entrar {
-    font-size: large;
-    height: 40px;
-    margin: 15px 0;
-    font-weight: bold;
-    width: 200px;
-    color: white;
-    background-color: #4caf50;
-    border-radius: 50px;
-    border: 2px black solid;
-    margin-top: 40px;
-    margin-left: 120px;
-    cursor: pointer;
-    outline: none;
-}
-
-.btn-entrar:hover{
-    background-color: rgb(41, 94, 52);
-    transition: 0.3s;
-}
-
+/* FOOTER */
 .footer {
     width: 100%;
     height: 30vh;
@@ -490,7 +291,6 @@
 }
 
 .input-email input {
-    outline: none;
     background-color: white;
     height: 4vh;
     width: 70%;
@@ -501,7 +301,6 @@
 }
 
 .input-email button {
-    outline: none;
     background-color: #d1d1d1;
     height: 4vh;
     width: 20%;
