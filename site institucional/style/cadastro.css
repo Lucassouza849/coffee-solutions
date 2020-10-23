@@ -1,5 +1,3 @@
-
-
 *{
   margin: 0;
   padding: 0;
@@ -19,7 +17,6 @@ body{
   
 }
 
-
 .first-container{
   width: 100;
   height: 100vh;
@@ -34,6 +31,10 @@ body{
   height: 8vh;
   display: flex;
   justify-content: center;
+}
+
+.nav-bar a {
+  color: black;
 }
 
 .central-nav-bar{
@@ -103,11 +104,11 @@ body{
 .button-nav-bar button:hover{
   background-color: #1b3f1b;
   color: #fff;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 .container-login{
-  max-width: 350px;
+  max-width: 400px;
   width: 100%;
   height: auto;
   background: rgb(255, 255, 255);
@@ -118,17 +119,18 @@ body{
   transform: translate(-50%,-50%);
   border-radius: 20px;
 }
-.container-login h2 {
+.container-login h1 {
   text-align: center;
+  padding-bottom: 20px;
 }
 
-.container-login .social_media{
+.social_media{
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.container-login .social_media .icone{
+.icone{
   margin: 0 5px;
   width: 40px;
   height: 40px;
@@ -141,25 +143,19 @@ body{
   transition: all 0.5s ease;
 }
 
-.container-login h2 {
-  
-  padding-bottom: 20px;
-}
-
-
-.container-login .social_media .icone:hover{
+.icone:hover{
   border: 2px solid #0ac222;
   color: #0ac222;
 }
 
-.container-login .form .input_form{
+.input_form{
   position: relative;
   margin-bottom: 10px;
 }
 
-.container-login .form .input_form .input{
+.input_form input{
   width: 100%;
-  height: 35px; 
+  height: 45px; 
   padding-left: 30px;
   border: none;
   border-radius: 6px;
@@ -173,9 +169,7 @@ body{
   text-align: center;
   padding: 12px;
   border-radius: 25px;
-
 }
-
 
 .container-login .form .btn a{
   color: #fff;
@@ -186,14 +180,10 @@ body{
     transition: 0.7s;
 }
 
-.container-login .form .input_form i{
+.input_form i{
   position: absolute;
-  top: 10px;
+  padding-top: 13px;
   left: 10px;
-  font-size: 14px;
+  font-size: 18px;
   color: #1d2120;
-}
-
-::-webkit-input-placeholder {
-  color: #151615;
 }
