@@ -1,0 +1,361 @@
+@font-face{
+    font-family: wolfer;
+    src: url(../fonte/circular-black.woff2);
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    background: none;
+    border: none;
+}
+
+.first-container{
+    width: 100;
+    height: 10vh;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.925);
+    position: fixed;
+}
+
+.nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.central-nav-bar{
+    width: 63%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-logo{
+    width: 13%;
+    height: 100%;
+}
+
+.list-nav-bar{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.list-nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-nav-bar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8vh;
+    margin-top: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-nav-bar ul li{
+    font-family: wolfer;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.list-nav-bar ul li a:hover{
+    text-decoration: underline #3c5f3c;
+    color: #3c5f3c;
+}
+
+
+.button-nav-bar{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-nav-bar button{
+    background-color: #ffffff;
+    border-radius: 500px;
+    padding: 10px 40px;
+    font-family: wolfer;
+    cursor: pointer;
+    color: #1b3f1b;
+    outline: none;
+}
+
+.button-nav-bar button:hover{
+    background-color: #1b3f1b;
+    color: #ffffff;
+}
+/* FIM NAVBAR */
+.secao-sobre {
+    background-color: white;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+
+.box1 {
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 img {
+    height: 100%;
+}
+
+.box2 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box2 h1 {
+    font-family: wolfer;
+    font-size: 65px;
+    margin-right: 100px;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.938);
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.middle-footer {
+    width: 70%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-footer{
+    width: 12vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-footer img{
+    width: 100%;
+    height: 50%;
+}
+
+
+.contato {
+    width: 10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contato a {
+    color: white;
+    text-decoration: none;
+}
+
+.contato ul{
+    width: 50%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    justify-content: space-evenly;
+    font-family: wolfer;
+    font-size: 15px;
+}
+
+.contato ul li:nth-child(1) {
+    color: #3c5f3c;
+    font-size: 20px;
+}
+
+.temporario {
+    width: 10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.temporario a {
+    color: white;
+    text-decoration: none;
+}
+
+.temporario ul{
+    width: 50%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: wolfer;
+    
+}
+
+.temporario ul li{
+    list-style: none;
+    font-family: wolfer;
+    font-size: 15px;
+}
+
+.temporario ul li:nth-child(1) {
+    color: #3c5f3c;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ajuda{
+    width: 10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ajuda a {
+    color: white;
+    text-decoration: none;
+}
+
+.ajuda ul{
+    width: 50%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: wolfer;
+}
+
+.ajuda ul li{
+    list-style: none;
+    font-family: wolfer;
+    font-size: 15px;
+}
+
+.ajuda ul li:nth-child(1) {
+    color: #3c5f3c;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.social{
+    width: 22vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.titulozin {
+    width: 100%;
+    height: 25%;
+    color: #3c5f3c;
+    font-family: wolfer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.input-email {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.input-email input {
+    background-color: white;
+    height: 4vh;
+    width: 70%;
+    border-radius: 5px;
+    border: 2px solid gray;
+    text-align: center;
+    font-family: wolfer;
+}
+
+.input-email button {
+    background-color: #d1d1d1;
+    height: 4vh;
+    width: 20%;
+    border-radius: 5px;
+    margin-left: -5px;
+    border: 2px solid gray;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.input-email button:hover {
+    background-color: darkgray;
+}
+
+.icons {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social ul{
+    list-style: none;
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.social a {
+    cursor: pointer;
+    color: #3c5f3c;
+    text-decoration: none;
+}
+
+.icons ul li:nth-child(2):hover{
+    color: white;
+}
+
+.icons a:hover {
+    color: white;
+    font-size: 45px;
+}
