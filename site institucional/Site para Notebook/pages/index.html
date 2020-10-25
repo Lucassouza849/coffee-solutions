@@ -15,7 +15,7 @@
         <div class="nav-bar">
             <div class="central-nav-bar">
                 <div class="img-logo"> <a href="#inicio">
-                    <img src="../images/Logo TCS.png" width="150px" height="100px">
+                        <img src="../images/Logo TCS.png" width="150px" height="100px">
                 </div></a>
                 <div class="list-nav-bar">
                     <ul>
@@ -85,6 +85,9 @@
                     <div class="img-wallet">
                         <img src="../images/wallet.svg">
                     </div>
+                    <div id="mensagemSimulador" class="mensagem">
+                        escreve alkguam cooisauiofhas
+                    </div>
                 </div>
                 <div class="second-part">
                     <div class="simulador">
@@ -93,13 +96,13 @@
                             <i class="fas fa-ruler"></i>
                             Quantidade de hectares:
                         </div>
-                        <input id="hec" class="input-simulator" placeholder="  Digite aqui...">
-                           <div class="text-simulator">
-                                <i class="fas fa-seedling"></i>
-                                Quantidade de talhões
-                            </div>
-                            <input id="talh" class="input-simulator" type="text" placeholder="   Digite aqui...">
-                            <button class="btn-entrar">SIMULAR</button>
+                        <input id="hec" class="input-simulator" placeholder="   Digite aqui...">
+                        <div class="text-simulator">
+                            <i class="fas fa-seedling"></i>
+                            Quantidade de talhões por hectare:
+                        </div>
+                        <input id="talhoes" class="input-simulator" type="text" placeholder="   Digite aqui...">
+                        <button onclick="calcular()" class="btn-simular">SIMULAR</button>
                     </div>
                 </div>
             </div>
@@ -160,13 +163,14 @@
         </div>
     </footer>
 </body>
+
 </html>
 <script>
-    function calcular(){
+    function calcular() {
+        var talhao = Number(talhoes.value);
         var hectare = Number(hec.value);
-        var total = ((hectare * 10) * 150) + 3000;
-        alert(`${total}`);
-        
+        var investimento = ((talhao * 1000)+ 1000)* hectare;
+        mensagemSimulador.style.display = 'block';
+        mensagemSimulador.innerHTML = `O investimento inicial será de <u style="color: green">R$${investimento.toFixed(2)}</u>. <br> O aumento de seu lucro gerado pela eficiência de nosso serviço, pode ser aumentado em até <u style="color: green">10%</u>.`;
     }
-    
 </script>
