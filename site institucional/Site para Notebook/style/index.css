@@ -252,9 +252,17 @@
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
+    flex-direction: column;
+}
+
+.mensagem {
+    display: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
 }
 
 .img-wallet {
@@ -300,7 +308,7 @@
     font-size: large;
 }
 
-.btn-entrar {
+.btn-simular {
     font-size: large;
     height: 40px;
     margin: 15px 0;
@@ -315,7 +323,7 @@
     outline: none;
 }
 
-.btn-entrar:hover{
+.btn-simular:hover{
     background-color: rgb(41, 94, 52);
     transition: 0.3s;
 }
