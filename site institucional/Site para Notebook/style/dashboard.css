@@ -12,7 +12,14 @@
     border: none;
 }
 body{
-    background: #4eaf4ede;
+    background: rgba(0, 0, 0, 0.125);
+}
+
+canvas{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    margin-left: 60%;
 }
 
 .first-container{

@@ -44,17 +44,17 @@
     <div class="form">
 
       <div class="input_form">
-        <input type="text" placeholder="  Digite seu e-mail" class="input">
+        <input type="text" placeholder="  Digite seu e-mail" class="input" id="input_login">
         <i class="far fa-envelope"></i>
       </div>
       <div class="input_form">
-        <input type="password" placeholder="  Digite sua senha" class="input">
+        <input type="password" placeholder="  Digite sua senha" class="input" id="input_senha">
         <i class="fas fa-lock"></i>
 
       </div>
 
-      <div class="btn">
-        <a href="texto">Entrar</a>
+      <div class="btn" onclick="entrar()">
+        Entrar
       </div>
       <div class="esqueci"><a href="construcao.html">
         <p>Esqueci a senha</p></a>
@@ -67,3 +67,21 @@
 </body>
 
 </html>
+
+<script>
+
+  function entrar(){
+
+    var login = input_login.value;
+    var senha = input_senha.value;
+
+    if (login == "admin" && senha == "admin123"){
+      window.location.href = "dashboard.html";
+    }
+    else{
+      alert('Senha ou usuário inválido')
+    }
+
+  }
+
+</script>

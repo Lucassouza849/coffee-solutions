@@ -8,14 +8,6 @@
 	<script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
     <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
     <link rel="stylesheet" href="../style/dashboard.css">
-	<style>
-	canvas{
-		-moz-user-select: none;
-		-webkit-user-select: none;
-		-ms-user-select: none;
-		margin-left: 60%;
-	}
-	</style>
 </head>
 <body>
         <section id="inicio" class="first-container">
@@ -47,7 +39,7 @@
 		data: {
 			labels: [],
 			datasets: [{
-				label: 'Temperatura',
+				label: 'Umidade',
 				backgroundColor: window.chartColors.blue,
 				borderColor: window.chartColors.blue,
 				data: [],
@@ -58,7 +50,7 @@
 			responsive: true,
 			title: {
 				display: true,
-				text: 'Gráfico de histórico de temperatura'
+				text: 'Gráfico histórico de umidade'
 			},
 			tooltips: {
 				mode: 'index',
@@ -80,7 +72,7 @@
 					display: true,
 					scaleLabel: {
 						display: true,
-						labelString: 'ºC'
+						labelString: '%'
 					}
 				}]
 			}
@@ -91,8 +83,9 @@
 	function sortearTemperatura() {
 		var limiteMin = 45;
 		var limiteMax = 55;
-		var minimoAbsoluto = Math.abs(limiteMin);
-		return (Math.random() * (minimoAbsoluto+limiteMax) - minimoAbsoluto).toFixed(1);
+		var min = Math.ceil(limiteMin);
+		var max = Math.floor(limiteMax);
+		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
 	function recuperarDadosIniciais() {
