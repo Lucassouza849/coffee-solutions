@@ -90,15 +90,10 @@
                     <div class="simulador">
                         <h1>SIMULE AQUI!</h1>
                         <div class="text-simulator">
-                            <i class="fas fa-seedling"></i>
-                            Quantidade de talhões:
-                        </div>
-                        <input class="input-simulator" placeholder="  Digite aqui...">
-                        <div class="text-simulator">
                             <i class="fas fa-ruler"></i>
                             Quantidade de hectares:
                         </div>
-                        <input class="input-simulator" placeholder="  Digite aqui...">
+                        <input id="hec" class="input-simulator" placeholder="  Digite aqui...">
                         <div>
                             <button class="btn-entrar">SIMULAR</button>
                         </div>
@@ -162,5 +157,12 @@
         </div>
     </footer>
 </body>
-
 </html>
+<script>
+    function calcular(){
+        var hectare = Number(hec.value);
+        var total = ((hectare * 10) * 150) + 3000;
+        alert(`${total}`);
+    }
+    
+</script>
