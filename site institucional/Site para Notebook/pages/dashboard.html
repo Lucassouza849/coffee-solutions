@@ -33,18 +33,40 @@
 </html>
 
 <script>
+	// mudar as cores dos textos
+	Chart.defaults.global.defaultFontColor = 'white';
+	Chart.defaults.global.defaultFontSize = 15;
+
 
 	var config = {
 		type: 'line',
 		data: {
 			labels: [],
 			datasets: [{
-				label: 'Umidade',
-				backgroundColor: window.chartColors.blue,
-				borderColor: window.chartColors.blue,
+				label: 'Verde',
+				backgroundColor: window.chartColors.green,
+				borderColor: window.chartColors.green,
 				data: [],
 				fill: false,
-            }]
+            },{
+				label: 'Cereja',
+				backgroundColor: window.chartColors.red,
+				borderColor: window.chartColors.red,
+				data: [],
+				fill: false
+				},{
+				label: 'Passa',
+				backgroundColor: window.chartColors.purple,
+				borderColor: window.chartColors.purple,
+				data: [],
+				fill: false
+				},{
+				label: 'Coco',
+				backgroundColor: window.chartColors.orange,
+				borderColor: window.chartColors.orange,
+				data: [],
+				fill: false
+				}]
 		},
 		options: {
 			responsive: true,
@@ -63,6 +85,10 @@
 			scales: {
 				xAxes: [{
 					display: true,
+					// mudar a cor da linha do eixo X
+					gridLines: {
+						color: '#ffffff69'
+						},
 					scaleLabel: {
 						display: true,
                         labelString: 'Horário da Leitura',
@@ -70,6 +96,10 @@
 				}],
 				yAxes: [{
 					display: true,
+					// mudar a cor da linha do eixo Y
+					gridLines: {
+						color: '#ffffff69'
+						},
 					scaleLabel: {
 						display: true,
 						labelString: '%'
@@ -80,9 +110,33 @@
     };
 
 	// esse "sortearTemperatura()" será desnecessário quando usarmos o backend futuramente
-	function sortearTemperatura() {
+	function sortearUmidade() {
+		var limiteMin = 60;
+		var limiteMax = 70;
+		var min = Math.ceil(limiteMin);
+		var max = Math.floor(limiteMax);
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	function sortearUmidade2() {
 		var limiteMin = 45;
 		var limiteMax = 55;
+		var min = Math.ceil(limiteMin);
+		var max = Math.floor(limiteMax);
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	function sortearUmidade3() {
+		var limiteMin = 30;
+		var limiteMax = 40;
+		var min = Math.ceil(limiteMin);
+		var max = Math.floor(limiteMax);
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	function sortearUmidade4() {
+		var limiteMin = 20;
+		var limiteMax = 30;
 		var min = Math.ceil(limiteMin);
 		var max = Math.floor(limiteMax);
 		return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -94,31 +148,103 @@
 		var registros = [
 			{
 				momento: '00:03:42',
-				leitura: sortearTemperatura()
+				leitura: sortearUmidade()
 			},
 			{
 				momento: '00:03:52',
-				leitura: sortearTemperatura()
+				leitura: sortearUmidade()
 			},
 			{
 				momento: '00:04:02',
-				leitura: sortearTemperatura()
+				leitura: sortearUmidade()
 			},
 			{
 				momento: '00:04:12',
-				leitura: sortearTemperatura()
+				leitura: sortearUmidade()
 			},
 			{
 				momento: '00:04:22',
-				leitura: sortearTemperatura()
+				leitura: sortearUmidade()
 			},
 			{
 				momento: '00:04:32',
-				leitura: sortearTemperatura()
+				leitura: sortearUmidade()
 			},
 			{
 				momento: '00:04:42',
-				leitura: sortearTemperatura()
+				leitura: sortearUmidade()
+			}
+		];
+
+		var registros2 = [
+			{
+				leitura: sortearUmidade2()
+			},
+			{
+				leitura: sortearUmidade2()
+			},
+			{
+				leitura: sortearUmidade2()
+			},
+			{
+				leitura: sortearUmidade2()
+			},
+			{
+				leitura: sortearUmidade2()
+			},
+			{
+				leitura: sortearUmidade2()
+			},
+			{
+				leitura: sortearUmidade2()
+			}
+		];
+
+		var registros3 = [
+			{
+				leitura: sortearUmidade3()
+			},
+			{
+				leitura: sortearUmidade3()
+			},
+			{
+				leitura: sortearUmidade3()
+			},
+			{
+				leitura: sortearUmidade3()
+			},
+			{
+				leitura: sortearUmidade3()
+			},
+			{
+				leitura: sortearUmidade3()
+			},
+			{
+				leitura: sortearUmidade3()
+			}
+		];
+
+		var registros4 = [
+			{
+				leitura: sortearUmidade4()
+			},
+			{
+				leitura: sortearUmidade4()
+			},
+			{
+				leitura: sortearUmidade4()
+			},
+			{
+				leitura: sortearUmidade4()
+			},
+			{
+				leitura: sortearUmidade4()
+			},
+			{
+				leitura: sortearUmidade4()
+			},
+			{
+				leitura: sortearUmidade4()
 			}
 		];
 
@@ -129,10 +255,11 @@
 
 			config.data.labels.push(registros[contador].momento);  // incluir um novo momento
 			config.data.datasets[0].data.push(registros[contador].leitura);  // incluir uma nova leitura
-
+			config.data.datasets[1].data.push(registros2[contador].leitura); 
+			config.data.datasets[2].data.push(registros3[contador].leitura); 
+			config.data.datasets[3].data.push(registros4[contador].leitura); 
 			contador++;
 		}
-
 	}
 
 	function receberNovasLeituras() {

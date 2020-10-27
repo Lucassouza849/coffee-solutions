@@ -60,4 +60,4 @@ function dht11(options){
 }
 
 
-module.exports = {lm35, dht11};
+module.exports = { dht11};

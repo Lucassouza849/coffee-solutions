@@ -99,11 +99,7 @@
                         <input id="hec" class="input-simulator" placeholder="   Digite aqui...">
                         <div class="text-simulator">
                             <i class="fas fa-seedling"></i>
-<<<<<<< HEAD
-                            Quantidade de talhões por hectare:
-=======
                             Talhões por hectare:
->>>>>>> feb26ae07e747652a13b572c4dfc04e5acf07717
                         </div>
                         <input id="talhoes" class="input-simulator" type="text" placeholder="   Digite aqui...">
                         <button onclick="calcular()" class="btn-simular">SIMULAR</button>
@@ -173,8 +169,8 @@
     function calcular() {
         var talhao = Number(talhoes.value);
         var hectare = Number(hec.value);
-        var investimento = ((talhao * 1000)+ 1000)* hectare;
+        var investimento = ((talhao * 2150) * hectare) + 2000;
         mensagemSimulador.style.display = 'block';
-        mensagemSimulador.innerHTML = `O investimento inicial será de <u style="color: green">R$${investimento.toFixed(2)}</u>. <br> O aumento de seu lucro gerado pela eficiência de nosso serviço, pode ser aumentado em até <u style="color: green">10%</u>.`;
+        mensagemSimulador.innerHTML = `O investimento inicial será de <u style="color: green">R$${investimento.toFixed(2)}</u> . <br> O aumento de seu lucro gerado pela eficiência de nosso serviço, pode ser aumentado em até <u style="color: green">10%</u>.`;
     }
 </script>

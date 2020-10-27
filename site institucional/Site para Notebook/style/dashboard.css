@@ -10,9 +10,10 @@
     font-size: 100%;
     background: none;
     border: none;
+    color: white;
 }
 body{
-    background: rgba(0, 0, 0, 0.125);
+    background: rgb(17, 16, 16);
 }
 
 canvas{
